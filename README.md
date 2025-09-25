@@ -31,7 +31,7 @@ Soft Mania is a Django-based web application that allows users to register, log 
 - **Backend:** Django 5.0.1, Python 3.11+  
 - **Database:** MySQL  
 - **Frontend:** HTML, CSS (Django templates)  
-- **Hosting:** Render  
+- **Hosting:** Render - https://soft-mania-7.onrender.com/
 
 ---
 
