@@ -76,13 +76,14 @@ WSGI_APPLICATION = 'soft_mania.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'soft_mania',        # name of your database
-        'USER': 'root',      # your MySQL username
-        'PASSWORD': 'root',  # your MySQL password
-        'HOST': 'localhost',   # or IP if using remote server
-        'PORT': '3306',        # default MySQL port
+        'NAME': os.environ.get('DB_NAME'),
+        'USER': os.environ.get('DB_USER'),
+        'PASSWORD': os.environ.get('DB_PASSWORD'),
+        'HOST': os.environ.get('DB_HOST'),
+        'PORT': os.environ.get('DB_PORT', '3306'),
     }
 }
+
 
 
 
